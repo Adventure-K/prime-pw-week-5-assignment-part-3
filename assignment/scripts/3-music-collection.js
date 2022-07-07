@@ -2,6 +2,7 @@ console.log('***** Music Collection *****')
 
 // Hold on, need to see what an array of objects looks like
 
+/*
 let deck = [];
 
 let card1 = {
@@ -21,20 +22,9 @@ deck.push(card2);
 deck.push(card3);
 
 console.log(deck);
-
-
-
-
+*/
 
 let collection = [];
-
-
-// Reference Object
-let albumR = {
-    title: 'Queen Mary\'s Big Belly',
-    artist: 'Gallicantus',
-    yearPublished: 2017
-}
 
 function addToCollection(title, artist, yearPublished) {
         let album = {
@@ -43,9 +33,14 @@ function addToCollection(title, artist, yearPublished) {
             yearPublished
         }
     collection.push(album);
+    console.log(album, ' has been added to the collection.');
     return album;
     }
 
-addToCollection('abc', 'def', 2000);
-addToCollection('ghi', 'jkl', 2005);
-console.log(collection);
+addToCollection('Symphony and Metallica', 'Metallica', 1999);
+addToCollection('Monteverdi: Vespers of the Blessed Virgin', 'John Eliot Gardiner', 1986);
+addToCollection('Larmes de Résurrection', 'La Tempête', 2018);
+addToCollection('Bach Transcriptions', 'Leonard Slatkin', 2000);
+addToCollection('Guerre et Paix', 'Jordi Savall', 2015) 
+addToCollection('Californication', 'Red Hot Chili Peppers', 1999)
+console.log('The collection:', collection);
